@@ -1,22 +1,25 @@
 #!/usr/bin/python
 import os
-
 import io
 import string
 
 #######################Python Backup Script#########################################
 ##
-##This script allows you to backup selective directories using dar. 
-##It has a couple of handy features:
+## This script allows you to backup selective directories using dar. 
+## It has a couple of handy features:
 
 ##
-##1) It will ignore any directory containing a file called ".nobackup".(configurable) 
-##2) Any directories put into the ignore list will be ignored recursively.
-##3) It will write these to DVD / CD, and prompt to enter next disk.
-##4) It dar files once burnt to disk.
+## 1) It will ignore any directory containing a file called ".nobackup".(configurable) 
+## 2) Any directories put into the ignore list will be ignored recursively.
+## 3) It will write these to DVD / CD, and prompt to enter next disk.
+## 4) It dar files once burnt to disk.
 ##
-##Source: http://programminglinuxblog.blogspot.com/ 
-##License: GPLv3. See http://www.gnu.org/licenses/gpl.html 
+## Source: http://programminglinuxblog.blogspot.com/ 
+## License: GPLv3. See http://www.gnu.org/licenses/gpl.html 
+####################################################################################
+
+####################################################################################
+## Settings
 ####################################################################################
 
 # All directories off ROOT_PATH are by included by default unless they are put in the
@@ -59,6 +62,10 @@ exclude = []
 # Example Ignore:
 # ignore = ["bin", "dev","initrd","lib","media","proc","tmp", "vmlinuz","boot","etc", 
 #            "mnt","root","srv","cdrom","lost+found","opt","sbin","sys","var"]
+
+####################################################################################
+## Settings End
+####################################################################################
 
 ignore.append(BACK_SAVE_LOC)      # ( WARNING: dont modify )
 
