@@ -12,7 +12,7 @@ import string
 ## 1) It will ignore any directory containing a file called ".nobackup".(configurable) 
 ## 2) Any directories put into the ignore list will be ignored recursively.
 ## 3) It will write these to DVD / CD, and prompt to enter next disk.
-## 4) It dar files once burnt to disk.
+## 4) It deletes dar files once burnt to disk.
 ##
 ## Source: http://programminglinuxblog.blogspot.com/ 
 ## License: GPLv3. See http://www.gnu.org/licenses/gpl.html 
